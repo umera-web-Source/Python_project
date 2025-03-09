@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "pubmed-research-papers"
+version = "0.1.0"
+description = "Fetch research papers from PubMed"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+click = "^8.1.8"
+pandas = "^2.2.3"
+email-validator = "^2.2.0"
+
+[tool.poetry.scripts]
+get-papers-list = "pubmed_research_papers.cli:main"
